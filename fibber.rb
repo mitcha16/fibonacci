@@ -2,19 +2,14 @@ class Fibber
 
   #calculates numbers and pushes them to array
   def calculate(number)
-    puts "What quantity would you like?"
-
     #creates array starting with 0 and 1
     numbers=[0, 1]
-    return nil if number==0
-
     #however many times in parameter do this
     (number-2).times { |i|
       total=numbers[i]+numbers[i+1]
       numbers.push(total)
     }
     #return array
-
     return numbers
 
   end
@@ -25,9 +20,8 @@ class Fibber
     return nil if input==0
     return puts "0" if input<2
 
-    space=0
+    space=spacing(numbers.last.to_s)
     ((numbers.count)/5).times {
-      space=spacing(numbers.last.to_s)
       n1=numbers.shift.to_s
       n2=numbers.shift.to_s
       n3=numbers.shift.to_s
@@ -61,3 +55,37 @@ int=input.to_i
 answer=c1.calculate(int)
 
 c1.print_numbers(answer, int)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
