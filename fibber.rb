@@ -56,36 +56,3 @@ answer=c1.calculate(int)
 
 c1.print_numbers(answer, int)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
